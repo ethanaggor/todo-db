@@ -1,4 +1,3 @@
 *User functionality (authentication via github, Google, gmail)
 *Editing feature
-*Button click responsiveness
 *Prevent empty strings from firing to database
