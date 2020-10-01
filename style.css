@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url(/img/leafBackground.jpg);
+  background: url(./img/leafBackground.jpg);
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
