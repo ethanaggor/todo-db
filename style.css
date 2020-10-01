@@ -45,8 +45,9 @@ h1 {
   text-align: center;
 }
 
-input {
+form {
   margin-top: 10px;
+  margin-bottom: 8px;
 }
 
 .content {
@@ -57,7 +58,7 @@ input {
   text-align: center;
   min-height: 5vh;
   width: 50vw;
-  max-height: 61vh;
+  max-height: 60vh;
   background: linear-gradient(to bottom, #a5de95, #34e354);
   border-radius: 25px;
   box-shadow: 10px 10px 8px #888888;
@@ -88,7 +89,6 @@ button {
   border: 0;
   background: #39fa5d;
   border-radius: 10px;
-  margin-top: 10px;
   padding: 6px;
   width: 14%;
   font-family: "Poppins", sans-serif;
