@@ -4,6 +4,32 @@
   text-decoration: none;
 }
 
+@media (max-width: 1145px) {
+  .content {
+    min-width: 80vw;
+  }
+  input {
+    min-width: 50vw;
+  }
+  button {
+    min-width: 30vw;
+    margin-bottom: 10px;
+  }
+  span {
+    width: 20px;
+  }
+  div:not(.content) {
+    display: flex;
+    float: right;
+  }
+}
+
+@media (max-width: 360px) {
+  input::placeholder {
+    font-size: 14px;
+  }
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: url(leafBackground.jpg);
@@ -11,6 +37,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 h1 {
@@ -23,18 +50,26 @@ input {
 }
 
 .content {
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   margin: 20px auto;
   text-align: center;
   min-height: 5vh;
   width: 50vw;
+  max-height: 61vh;
   background: linear-gradient(to bottom, #a5de95, #34e354);
   border-radius: 25px;
   box-shadow: 10px 10px 8px #888888;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 form input {
+  vertical-align: middle;
   width: 38%;
   padding: 8px 0;
   border: 0;
@@ -49,6 +84,7 @@ form input:focus {
 }
 
 button {
+  vertical-align: middle;
   border: 0;
   background: #39fa5d;
   border-radius: 10px;
