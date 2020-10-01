@@ -1,3 +1,2 @@
 *User functionality (authentication via github, Google, gmail)
 *Editing feature
-*Prevent empty strings from firing to database

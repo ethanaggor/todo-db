@@ -59,8 +59,10 @@ db.collection("items")
 //? Listen for a submit event
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  db.collection("items").add({
-    ingredient: form.ingredient.value,
-  });
-  form.ingredient.value = "";
+  if (form.ingredient.value !== "") {
+    db.collection("items").add({
+      ingredient: form.ingredient.value,
+    });
+    form.ingredient.value = "";
+  }
 });
